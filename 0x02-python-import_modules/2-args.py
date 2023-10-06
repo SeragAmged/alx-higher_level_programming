@@ -11,6 +11,6 @@ if __name__ == "__main__":
             if index == 0:
                 continue
             elif index + 1 == len(sys.argv):
-                print(f"{index}: {arg}", end="")
+                print(f"{index}: {arg}")
             else:
                 print(f"{index}: {arg}")
