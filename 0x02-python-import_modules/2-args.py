@@ -3,6 +3,7 @@
 if __name__ == "__main__":
     """Print the number of and list of arguments."""
     import sys
+    
     if sys.argv == 1:
         print("0 arguments.")
     else:
