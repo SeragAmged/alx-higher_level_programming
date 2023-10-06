@@ -6,9 +6,10 @@ if __name__ == "__main__":
     if len(sys.argv) == 1:
         print("0 arguments.")
     elif len(sys.argv) == 2:
-        print("argument:".format(len(sys.argv) - 1))
-        print("1: {}".format(sys.argv[1]))
+        print(f"{len(sys.argv) - 1:d} argument:")
+        print(f"{1}: {sys.argv[1]}")
     else:
-        print("arguments:".format(len(sys.argv) - 1))
+        print(f"{len(sys.argv) - 1:d} arguments:")
         for index, arg in enumerate(sys.argv):
-            print("{}: {}".format(index, arg)) if index != 0 else None
+            print(f"{index}: {arg}") if index != 0 else None
+
