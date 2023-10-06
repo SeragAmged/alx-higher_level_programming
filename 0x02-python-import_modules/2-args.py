@@ -3,14 +3,12 @@
 if __name__ == "__main__":
     """Print the number of and list of arguments."""
     import sys
-    if sys.argv == 1:
+    if len(sys.argv) == 1:
         print("0 arguments.")
+    elif len(sys.argv) == 2:
+        print(f"{len(sys.argv) - 1:d} argument:")
+        print(f"{1}: {sys.argv[1]}")
     else:
         print(f"{len(sys.argv) - 1:d} arguments:")
         for index, arg in enumerate(sys.argv):
-            if index == 0:
-                continue
-            elif index + 1 == len(sys.argv):
-                print(f"{index}: {arg}")
-            else:
-                print(f"{index}: {arg}")
+            print(f"{index}: {arg}") if index != 0 else None
