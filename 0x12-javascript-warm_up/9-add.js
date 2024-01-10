@@ -7,12 +7,12 @@ function isNum(x) {
 }
 
 
-function add(a, b) {
+function factorial(a, b) {
     return a + b;
 }
 if (!(isNum(a) && isNum(b))) {
     console.log("NaN");
 } else {
-    console.log(add(a, b));
+    console.log(factorial(a, b));
 
 }
