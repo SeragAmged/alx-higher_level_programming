@@ -2,7 +2,6 @@
 
 """ connects to a database and retrieves data from the 'states' table. """
 
-
 import sys
 import MySQLdb
 
