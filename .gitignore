@@ -4,3 +4,5 @@
 .gitignore
 0x0F-python-object_relational_mapping/main.py
 .gitignore
+0x0F-python-object_relational_mapping/__pycache__/
+.gitignore
