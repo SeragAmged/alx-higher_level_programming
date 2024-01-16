@@ -14,6 +14,5 @@ if __name__ == "__main__":
     session = Session()
     for state in session.query(State).order_by(State.id).filter(State.name.contains('a')).all():
         session.delete(state)
-    for state in session.query(State).order_by(State.id).filter(State.name.contains('a')).all():
-        print("{}: {}".format(state.id, state.name))
-    session.close()
+
+    session.commit()
