@@ -6,3 +6,5 @@
 .gitignore
 0x0F-python-object_relational_mapping/__pycache__/
 .gitignore
+0x15-javascript-web_jquery/.vscode/settings.json
+0x15-javascript-web_jquery/main.html
